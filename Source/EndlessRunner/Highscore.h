@@ -14,6 +14,6 @@ class ENDLESSRUNNER_API UHighscore : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
-	// UFUNCTION(BlueprintCallable, Category = "Gameplay")
-	// static void UpdateHighscoreFromLifespan(AActor* Actor);
+	 UFUNCTION(BlueprintCallable, Category = "Gameplay")
+	 static void UpdateHighscoreFromLifespan(AActor* Actor);
 };

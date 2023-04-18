@@ -64,15 +64,12 @@ void ARunnerCharacter::Tick(float DeltaTime)
 
 	Score += DeltaTime;
 	
-	accelerateSpeed += 0.01f;
+	accelerateSpeed += (DeltaTime * 1.0f);
 	
 	tempPos = GetActorLocation();
 	tempPos.X -= 850.0f;
 	tempPos.Z = zPosition;
 	SideViewCamera->SetWorldLocation(tempPos);
-
-	// FVector NewLocation = tempPos + FVector(0.0f,1.0f, 0.0f );
-	// SetActorLocation(NewLocation);
 
 	AutoMoveRight();
 }

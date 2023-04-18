@@ -3,3 +3,7 @@
 
 #include "Highscore.h"
 
+void UHighscore::UpdateHighscoreFromLifespan(AActor* Actor)
+{
+}
+

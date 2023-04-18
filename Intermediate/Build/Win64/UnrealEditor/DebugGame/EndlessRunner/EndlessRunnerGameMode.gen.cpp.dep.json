@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\shakil.islam\\onedrive - change maker education\\documents\\unreal projects\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\endlessrunnergamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\shakil.islam\\onedrive - change maker education\\documents\\unreal projects\\endlessrunner\\intermediate\\build\\win64\\endlessrunnereditor\\debuggame\\engine\\sharedpch.engine.nonoptimized.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\shakil.islam\\onedrive - change maker education\\documents\\unreal projects\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\debuggame\\endlessrunner\\definitions.endlessrunner.h",
+            "c:\\users\\shakil.islam\\onedrive - change maker education\\documents\\unreal projects\\endlessrunner\\source\\endlessrunner\\endlessrunnergamemode.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\shakil.islam\\onedrive - change maker education\\documents\\unreal projects\\endlessrunner\\intermediate\\build\\win64\\unrealeditor\\inc\\endlessrunner\\uht\\endlessrunnergamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

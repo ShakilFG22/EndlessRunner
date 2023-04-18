@@ -11,7 +11,7 @@ UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ENDLESSRUNNER_API UPlatformManager : public USceneComponent
 {
 	GENERATED_BODY()
-		//comment
+
 public:	
 	// Sets default values for this component's properties
 	UPlatformManager();
