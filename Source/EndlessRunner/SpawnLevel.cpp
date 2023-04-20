@@ -19,7 +19,7 @@ void ASpawnLevel::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	SpawnLevel(true);
+	SpawnLevel(true );
 	SpawnLevel(false);
 	SpawnLevel(false);
 	SpawnLevel(false);
@@ -54,13 +54,6 @@ void ASpawnLevel::SpawnLevel(bool isFirst)
 		case 4: NewLevel = GetWorld()->SpawnActor<ABaseLevel>(Level4, SpawnLocation, SpawnRotation, SpawnInfo); break;
 		case 5: NewLevel = GetWorld()->SpawnActor<ABaseLevel>(Level5, SpawnLocation, SpawnRotation, SpawnInfo); break;
 	}
-	
-/*	if		(RandomLevel == 1) NewLevel = GetWorld()->SpawnActor<ABaseLevel>(Level1, SpawnLocation, SpawnRotation, SpawnInfo);
-	else if (RandomLevel == 2) NewLevel = GetWorld()->SpawnActor<ABaseLevel>(Level2, SpawnLocation, SpawnRotation, SpawnInfo);
-	else if (RandomLevel == 3) NewLevel = GetWorld()->SpawnActor<ABaseLevel>(Level3, SpawnLocation, SpawnRotation, SpawnInfo);
-	else if (RandomLevel == 4) NewLevel = GetWorld()->SpawnActor<ABaseLevel>(Level4, SpawnLocation, SpawnRotation, SpawnInfo);
-	else if (RandomLevel == 5) NewLevel = GetWorld()->SpawnActor<ABaseLevel>(Level5, SpawnLocation, SpawnRotation, SpawnInfo);
-*/
 
 	if (NewLevel)
 	{
