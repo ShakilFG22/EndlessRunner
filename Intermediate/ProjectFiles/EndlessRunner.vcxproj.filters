@@ -111,9 +111,6 @@
     <ClCompile Include="..\..\Source\EndlessRunner\SpawnLevel.cpp">
       <Filter>Source\EndlessRunner</Filter>
     </ClCompile>
-    <None Include="..\..\Source\EndlessRunner\SpawnLevel.cpp~">
-      <Filter>Source\EndlessRunner</Filter>
-    </None>
     <ClInclude Include="..\..\Source\EndlessRunner\SpawnLevel.h">
       <Filter>Source\EndlessRunner</Filter>
     </ClInclude>
