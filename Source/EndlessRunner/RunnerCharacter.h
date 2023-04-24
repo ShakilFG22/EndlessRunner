@@ -39,7 +39,6 @@ public:
 	{
 		return SideViewCamera;
 	}
-	void someFunction();
 	void RestartLevel();
 
 

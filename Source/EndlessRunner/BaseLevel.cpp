@@ -36,4 +36,9 @@ UBoxComponent* ABaseLevel::GetSpawnLocation()
 	return SpawnLocation;
 }
 
+UBoxComponent* ABaseLevel::GetTestBox()
+{
+	return TestBox;
+}
+
 

@@ -91,12 +91,6 @@ void ARunnerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 }
 
-void ARunnerCharacter::someFunction()
-{
-	int variable = 1;
-	variable++;
-}
-
 void ARunnerCharacter::RestartLevel()
 {
 	characterHealth = 3;

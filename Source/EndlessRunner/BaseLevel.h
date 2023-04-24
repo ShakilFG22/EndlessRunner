@@ -31,7 +31,12 @@ protected:
 	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category= "My Spawn Location")
 	UBoxComponent* SpawnLocation;
+
 public:
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category= "Test Box")
+	UBoxComponent* TestBox;
+	
 	UBoxComponent* GetTrigger();
 	UBoxComponent* GetSpawnLocation();
+	UBoxComponent* GetTestBox();
 };
