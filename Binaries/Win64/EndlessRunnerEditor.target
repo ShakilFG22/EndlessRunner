@@ -2650,42 +2650,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor-HttpGPTChatModule.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor-HttpGPTChatModule.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor-HttpGPTCommonModule.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor-HttpGPTCommonModule.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor-HttpGPTEditorModule.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor-HttpGPTEditorModule.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor-HttpGPTImageModule.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor-HttpGPTImageModule.pdb",
-			"Type": "SymbolFile"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/Binaries/Win64/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Media/AndroidMedia/Binaries/Win64/UnrealEditor-AndroidMediaEditor.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -24221,10 +24185,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Marketplace/Developer/RiderLink/RiderLink.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Marketplace/HttpGPT/HttpGPT.uplugin",
 			"Type": "UFS"
 		},
 		{

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="..\..\EndlessRunner.uproject" />
     <Filter Include="Source">
@@ -55,6 +55,12 @@
       <Filter>Source\EndlessRunner</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\EndlessRunner\BaseLevel.h">
+      <Filter>Source\EndlessRunner</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EndlessRunner\CustomGameModeBase.cpp">
+      <Filter>Source\EndlessRunner</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EndlessRunner\CustomGameModeBase.h">
       <Filter>Source\EndlessRunner</Filter>
     </ClInclude>
     <None Include="..\..\Source\EndlessRunner\EndlessRunner.Build.cs">

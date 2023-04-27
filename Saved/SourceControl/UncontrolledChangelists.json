@@ -19,16 +19,18 @@
 				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/BP_SpawnLevel.uasset",
 				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/Obstacles/BP_WallSpike.uasset",
 				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/UI/W_Highscore.uasset",
-				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/UI/Drag.uasset",
 				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Maps/PlatformMap.umap",
 				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/PlatformManager.uasset",
 				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/Platform.uasset",
 				"C:/Program Files/Epic Games/UE_5.1/Engine/Content/VREditor/UI/ArrowMaterial.uasset",
 				"C:/Program Files/Epic Games/UE_5.1/Engine/Content/MapTemplates/Sky/DaylightAmbientCubemap_Mat.uasset",
-				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/UI/ExampleWidget.uasset",
 				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/UI/WBP_TickDisplay.uasset",
 				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/Obstacles/BP_ProjectileSpike.uasset",
-				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/Test.uasset"
+				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/Test.uasset",
+				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/BP_RunnerCharacter2.uasset",
+				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/Blueprints/CustomGameModeBase.uasset",
+				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/UI/Drag.uasset",
+				"C:/Users/shakil.islam/OneDrive - Change Maker Education/Documents/Unreal Projects/EndlessRunner/Content/UI/ExampleWidget.uasset"
 			]
 		}
 	]
