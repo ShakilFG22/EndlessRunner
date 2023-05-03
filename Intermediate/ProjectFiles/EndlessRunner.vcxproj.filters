@@ -60,6 +60,9 @@
     <ClCompile Include="..\..\Source\EndlessRunner\CustomGameModeBase.cpp">
       <Filter>Source\EndlessRunner</Filter>
     </ClCompile>
+    <None Include="..\..\Source\EndlessRunner\CustomGameModeBase.cpp~">
+      <Filter>Source\EndlessRunner</Filter>
+    </None>
     <ClInclude Include="..\..\Source\EndlessRunner\CustomGameModeBase.h">
       <Filter>Source\EndlessRunner</Filter>
     </ClInclude>
@@ -112,6 +115,18 @@
       <Filter>Source\EndlessRunner</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\EndlessRunner\RunnerCharacter.h">
+      <Filter>Source\EndlessRunner</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EndlessRunner\RunnerCharacter2.cpp">
+      <Filter>Source\EndlessRunner</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EndlessRunner\RunnerCharacter2.h">
+      <Filter>Source\EndlessRunner</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EndlessRunner\RunnerController.cpp">
+      <Filter>Source\EndlessRunner</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EndlessRunner\RunnerController.h">
       <Filter>Source\EndlessRunner</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\EndlessRunner\SpawnLevel.cpp">

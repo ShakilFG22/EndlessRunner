@@ -32,19 +32,28 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 protected:
-	void MoveRight(float value);
-	void AutoMoveRight();
+	virtual void AutoMoveRight();
 public:
-	class UCameraComponent* GetSideViewCameraComponent() const
+	virtual class UCameraComponent* GetSideViewCameraComponent() const
 	{
 		return SideViewCamera;
 	}
 	void RestartLevel();
-
+	// void Player1Jump();
+	// void Player2Jump();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Gameplay")
 	float Score;
+
+	// UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player")
+	// int PlayerIndex;
+
 	
+	// UPROPERTY(VisibleAnywhere)
+	// AEndlessRunnerCharacter* Player1;
+	// UPROPERTY(VisibleAnywhere)
+	// AEndlessRunnerCharacter* Player2;
+
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp,
 		AActor* OtherActor, UPrimitiveComponent* OtherComp,

@@ -55,8 +55,6 @@ void ARunnerCharacter::BeginPlay()
 	CanMove = true;
 }
 
-
-
 // Called every frame
 void ARunnerCharacter::Tick(float DeltaTime)
 {
@@ -75,7 +73,6 @@ void ARunnerCharacter::Tick(float DeltaTime)
 }
 void ARunnerCharacter::AutoMoveRight()
 {
-	
 	FVector CurrentLocation = GetActorLocation();
 	if (CanMove)
 		currentLocation = CurrentLocation + FVector(0.0f,accelerateSpeed, 0.0f );
@@ -87,9 +84,23 @@ void ARunnerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	// if (PlayerIndex == 0)
+	// {
+		// PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+		// PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	// }
+	// else if (PlayerIndex == 1)
+	// {
+	// 	PlayerInputComponent->BindAction("Jump2", IE_Pressed, this, &ACharacter::Jump);
+	// 	PlayerInputComponent->BindAction("Jump2", IE_Released, this, &ACharacter::StopJumping);
+	// }
 }
+
+//TODO reference this function in the RunnerController.cpp
+// void AEndlessPlayerController::Action1()
+// {
+// 	Player1->Jump();
+// }
 
 void ARunnerCharacter::RestartLevel()
 {
@@ -98,6 +109,15 @@ void ARunnerCharacter::RestartLevel()
 	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()));
 }
 
+// void ARunnerCharacter::Player1Jump()
+// {
+// 	Jump();
+// }
+//
+// void ARunnerCharacter::Player2Jump()
+// {
+// 	Jump();
+// }
 
 
 void ARunnerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
