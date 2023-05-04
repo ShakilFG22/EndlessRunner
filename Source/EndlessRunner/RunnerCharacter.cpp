@@ -8,8 +8,6 @@
 #include "Components/CapsuleComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
-#include "Spikes.h"
-#include "WallSpike.h"
 #include "Engine.h"
 #include "TimerManager.h"
 
@@ -49,6 +47,8 @@ void ARunnerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	// RunnerController1 = GetController<ARunnerController>();
+	// RunnerController2 = GetController<ARunnerController>();
 	
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ARunnerCharacter::OnOverlapBegin);
 	
@@ -60,7 +60,8 @@ void ARunnerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	Score += DeltaTime;
+	Score  += DeltaTime;
+	Score2 += DeltaTime;
 	
 	accelerateSpeed += (DeltaTime * 1.0f);
 	
@@ -79,46 +80,12 @@ void ARunnerCharacter::AutoMoveRight()
 	SetActorLocation(currentLocation);
 }
 
-// Called to bind functionality to input
-void ARunnerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-	// if (PlayerIndex == 0)
-	// {
-		// PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-		// PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	// }
-	// else if (PlayerIndex == 1)
-	// {
-	// 	PlayerInputComponent->BindAction("Jump2", IE_Pressed, this, &ACharacter::Jump);
-	// 	PlayerInputComponent->BindAction("Jump2", IE_Released, this, &ACharacter::StopJumping);
-	// }
-}
-
-//TODO reference this function in the RunnerController.cpp
-// void AEndlessPlayerController::Action1()
-// {
-// 	Player1->Jump();
-// }
-
 void ARunnerCharacter::RestartLevel()
 {
 	characterHealth = 3;
 	UE_LOG(LogTemp, Warning, TEXT("Character health: %d"), characterHealth)
 	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()));
 }
-
-// void ARunnerCharacter::Player1Jump()
-// {
-// 	Jump();
-// }
-//
-// void ARunnerCharacter::Player2Jump()
-// {
-// 	Jump();
-// }
-
 
 void ARunnerCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)

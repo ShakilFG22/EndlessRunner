@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeEndlessRunner_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xBF35E077,
+				0xA717BE64,
 				0x9D27E92E,
 				METADATA_PARAMS(nullptr, 0)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeEndlessRunner_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_EndlessRunner.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_EndlessRunner(Z_Construct_UPackage__Script_EndlessRunner, TEXT("/Script/EndlessRunner"), Z_Registration_Info_UPackage__Script_EndlessRunner, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xBF35E077, 0x9D27E92E));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_EndlessRunner(Z_Construct_UPackage__Script_EndlessRunner, TEXT("/Script/EndlessRunner"), Z_Registration_Info_UPackage__Script_EndlessRunner, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xA717BE64, 0x9D27E92E));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

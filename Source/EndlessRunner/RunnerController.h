@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "RunnerCharacter.h"
 #include "GameFramework/PlayerController.h"
+#include "CustomGameModeBase.h"
 #include "RunnerController.generated.h"
 
 /**
@@ -19,8 +20,8 @@ public:
 	// int PlayerIndex;
 	ARunnerController();
 	virtual void BeginPlay() override;
-	void SetControllerPawns(APawn* NewPawn);
-	
+	// void SetControllerPawns(APawn* NewPawn);
+	void MovePlayer2();
 protected:
 	virtual void SetupInputComponent() override;
 
@@ -34,7 +35,7 @@ protected:
 
 private:
 	
-	void Jump();
-    void Jump2();
+	// void Jump();
+ //    void Jump2();
 
 };

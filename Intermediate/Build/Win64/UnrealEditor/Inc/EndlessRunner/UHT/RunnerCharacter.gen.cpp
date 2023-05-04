@@ -108,9 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeRunnerCharacter() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "// UPROPERTY(VisibleAnywhere)\n// AEndlessRunnerCharacter* Player1;\n// UPROPERTY(VisibleAnywhere)\n// AEndlessRunnerCharacter* Player2;\n" },
 		{ "ModuleRelativePath", "RunnerCharacter.h" },
-		{ "ToolTip", "UPROPERTY(VisibleAnywhere)\nAEndlessRunnerCharacter* Player1;\nUPROPERTY(VisibleAnywhere)\nAEndlessRunnerCharacter* Player2;" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARunnerCharacter, nullptr, "OnOverlapBegin", nullptr, nullptr, sizeof(Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin_Statics::RunnerCharacter_eventOnOverlapBegin_Parms), Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin_Statics::Function_MetaDataParams)) };
@@ -143,6 +141,10 @@ void EmptyLinkFunctionForGeneratedCodeRunnerCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Score_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_Score;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Score2_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Score2;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -152,7 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeRunnerCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_EndlessRunner,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ARunnerCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin, "OnOverlapBegin" }, // 3850845268
+		{ &Z_Construct_UFunction_ARunnerCharacter_OnOverlapBegin, "OnOverlapBegin" }, // 2849030141
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunnerCharacter_Statics::Class_MetaDataParams[] = {
@@ -178,9 +180,17 @@ void EmptyLinkFunctionForGeneratedCodeRunnerCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score = { "Score", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ARunnerCharacter, Score), METADATA_PARAMS(Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score2_MetaData[] = {
+		{ "Category", "Gameplay" },
+		{ "ModuleRelativePath", "RunnerCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score2 = { "Score2", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ARunnerCharacter, Score2), METADATA_PARAMS(Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score2_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score2_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARunnerCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_SideViewCamera,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARunnerCharacter_Statics::NewProp_Score2,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARunnerCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ARunnerCharacter>::IsAbstract,
@@ -219,9 +229,9 @@ void EmptyLinkFunctionForGeneratedCodeRunnerCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_shakil_islam_OneDrive___Change_Maker_Education_Documents_Unreal_Projects_EndlessRunner_Source_EndlessRunner_RunnerCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARunnerCharacter, ARunnerCharacter::StaticClass, TEXT("ARunnerCharacter"), &Z_Registration_Info_UClass_ARunnerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunnerCharacter), 3129714677U) },
+		{ Z_Construct_UClass_ARunnerCharacter, ARunnerCharacter::StaticClass, TEXT("ARunnerCharacter"), &Z_Registration_Info_UClass_ARunnerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARunnerCharacter), 1968407822U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_shakil_islam_OneDrive___Change_Maker_Education_Documents_Unreal_Projects_EndlessRunner_Source_EndlessRunner_RunnerCharacter_h_4049054799(TEXT("/Script/EndlessRunner"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_shakil_islam_OneDrive___Change_Maker_Education_Documents_Unreal_Projects_EndlessRunner_Source_EndlessRunner_RunnerCharacter_h_528964084(TEXT("/Script/EndlessRunner"),
 		Z_CompiledInDeferFile_FID_Users_shakil_islam_OneDrive___Change_Maker_Education_Documents_Unreal_Projects_EndlessRunner_Source_EndlessRunner_RunnerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_shakil_islam_OneDrive___Change_Maker_Education_Documents_Unreal_Projects_EndlessRunner_Source_EndlessRunner_RunnerCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

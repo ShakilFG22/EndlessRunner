@@ -21,6 +21,9 @@ protected:
 	// virtual void PostLogin(APlayerController* NewPlayer) override;
 
 public:
+
+	APawn* Pawn1;
+	APawn* Pawn2;
 	// UFUNCTION(BlueprintCallable, Category="Game")
 	// void CreatePlayers();
 	

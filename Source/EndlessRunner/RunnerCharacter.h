@@ -29,10 +29,15 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	// virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 protected:
 	virtual void AutoMoveRight();
+	
+	// UPROPERTY(VisibleAnywhere)
+	// ARunnerController* RunnerController1;
+	// UPROPERTY(VisibleAnywhere)
+	// ARunnerController* RunnerController2;
 public:
 	virtual class UCameraComponent* GetSideViewCameraComponent() const
 	{
@@ -44,15 +49,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Gameplay")
 	float Score;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Gameplay")
+	float Score2;
 
-	// UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player")
-	// int PlayerIndex;
 
 	
-	// UPROPERTY(VisibleAnywhere)
-	// AEndlessRunnerCharacter* Player1;
-	// UPROPERTY(VisibleAnywhere)
-	// AEndlessRunnerCharacter* Player2;
 
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp,

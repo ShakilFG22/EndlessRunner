@@ -13,12 +13,12 @@
 
 ACustomGameModeBase::ACustomGameModeBase()
 {
-	// DefaultPawnClass = ACustomGameModeBase::StaticClass(); //This one worked best, I think.
+	/*
+	// DefaultPawnClass = ACustomGameModeBase::StaticClass(); //No longer needed!!! This one worked best, I think. 
 	// PlayerControllerClass = ACustomGameModeBase::StaticClass();
-
 	// DefaultPawnClass = nullptr; // I had some issues with this one.
 	// PlayerControllerClass = ARunnerController::StaticClass();
-
+*/
 	DefaultPawnClass = ARunnerCharacter::StaticClass();
 	PlayerControllerClass = ARunnerController::StaticClass();
 	
@@ -28,27 +28,30 @@ void ACustomGameModeBase::BeginPlay()
 {
 	Super::BeginPlay();
 
+	UGameplayStatics::CreatePlayer(GetWorld(), 0, true);
+	UGameplayStatics::CreatePlayer(GetWorld(), 1, true);
 	// APlayerController* Player1Controller = UGameplayStatics::CreatePlayer(GetWorld(), 0, true);
 	// APlayerController* Player2Controller = UGameplayStatics::CreatePlayer(GetWorld(), 1, true);
-	ARunnerController* Player1Controller = Cast<ARunnerController>(UGameplayStatics::CreatePlayer(GetWorld(), 0, true));
-	ARunnerController* Player2Controller = Cast<ARunnerController>(UGameplayStatics::CreatePlayer(GetWorld(), 1, true));
+	// ARunnerController* RunnerController1 = Cast<ARunnerController>(UGameplayStatics::CreatePlayer(GetWorld(), 0, true));
+	// ARunnerController* RunnerController2 = Cast<ARunnerController>(UGameplayStatics::CreatePlayer(GetWorld(), 1, true));
 
+	// RunnerController1->Possess(Pawn1);
+	// RunnerController2->Possess(Pawn2);
 
-
-	if (Player1Controller && Player2Controller)
-	{
-		GetWorld()->GetTimerManager().SetTimerForNextTick([this, Player1Controller, Player2Controller]()
-		{
-			APawn* Player1Pawn = Player1Controller->GetPawn();
-			APawn* Player2Pawn = Player2Controller->GetPawn();
-
-			if (Player1Pawn && Player2Pawn)
-			{
-				Player1Controller->SetControllerPawns(Player1Pawn);
-				Player2Controller->SetControllerPawns(Player2Pawn);
-			}
-		});
-	}
+	// if (Player1Controller && Player2Controller)
+	// {
+	// 	GetWorld()->GetTimerManager().SetTimerForNextTick([this, Player1Controller, Player2Controller]()
+	// 	{
+	// 		APawn* Player1Pawn = Player1Controller->GetPawn();
+	// 		APawn* Player2Pawn = Player2Controller->GetPawn();
+	//
+	// 		if (Player1Pawn && Player2Pawn)
+	// 		{
+	// 			Player1Controller->SetControllerPawns(Player1Pawn);
+	// 			Player2Controller->SetControllerPawns(Player2Pawn);
+	// 		}
+	// 	});
+	// }
 }
 
 // void ACustomGameModeBase::CreatePlayers()
