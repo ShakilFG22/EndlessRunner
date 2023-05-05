@@ -18,6 +18,7 @@ void ARunnerController::BeginPlay()
 	Super::BeginPlay();
 
 	Player1 = Cast<ARunnerCharacter>(GetPawn());
+
 	// Player2 = Cast<ARunnerCharacter>(GetPawn());
 
 	
@@ -53,29 +54,6 @@ void ARunnerController::SetupInputComponent()
 	
 	InputComponent->BindAction("Jump", IE_Pressed, this, &ARunnerController::PlayerAction1);
 	InputComponent->BindAction("Jump2", IE_Pressed, this, &ARunnerController::PlayerAction2);
-	
-	/*/ if (GetLocalPlayer()->GetControllerId() == 0) // Player 1
-	// {
-	// 	// InputComponent->BindAction("Jump", IE_Pressed, this, &ARunnerController::Jump);
-	// 	InputComponent->BindAction("Jump", IE_Pressed, this, &ARunnerController::PlayerAction1);
-	// }
-	// if (GetLocalPlayer()->GetControllerId() == 1) // Player 2
-	// {
-	// 	// InputComponent->BindAction("Jump2", IE_Pressed, this, &ARunnerController::Jump2);
-	// 	InputComponent->BindAction("Jump2", IE_Pressed, this, &ARunnerController::PlayerAction2);
-	// }
-	
-	// if (GetLocalPlayer()->GetControllerId() == 0)
-	// {
-	//		Set up Player1 input
-	//		InputComponent->BindAction("Jump", IE_Pressed, this, &ARunnerController::Jump);
-	// }
-	// if (GetLocalPlayer()->GetControllerId() == 1)
-	// {
-	// 	// Set up Player2 input
-	// 	InputComponent->BindAction("Jump2", IE_Pressed, this, &ARunnerController::Jump);
-	//
-	// }*/
 }
 
 void ARunnerController::PlayerAction1()
@@ -91,7 +69,11 @@ void ARunnerController::PlayerAction2()
 	if(!Player2)
 	{
 		Player2 = Cast<ARunnerCharacter>(UGameplayStatics::GetPlayerController(GetWorld(),1)->GetCharacter());
+		SetMaterialColour(FLinearColor::Black);
+		//Change Player2 material color
 		
+		
+		// Player2->SetActorLocation(FVector(75,-1276,155)); //These just crashed if placed in BeginPlay
 	}
 	
 	if (Player2)
@@ -99,3 +81,25 @@ void ARunnerController::PlayerAction2()
 		Player2->Jump();
 	}
 }
+
+void ARunnerController::SetMaterialColour(FLinearColor Colour)
+{
+	if (!Player2) return;
+
+	USkeletalMeshComponent* MeshComponent = Player2->GetMesh();
+	if (!MeshComponent) return;
+
+	if (!MaterialInstance)
+	{
+		MaterialInstance = UMaterialInstanceDynamic::Create(MeshComponent->GetMaterial(0), this);
+		MeshComponent->SetMaterial(0, MaterialInstance);
+	}
+
+	if (MaterialInstance)
+	{
+		MaterialInstance->SetVectorParameterValue(FName("Color"), Colour);
+	}
+}
+
+
+

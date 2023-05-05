@@ -24,6 +24,10 @@ public:
 
 	APawn* Pawn1;
 	APawn* Pawn2;
+
+	//a function to spawn the players
+	void SpawnPlayers();
+	
 	// UFUNCTION(BlueprintCallable, Category="Game")
 	// void CreatePlayers();
 	

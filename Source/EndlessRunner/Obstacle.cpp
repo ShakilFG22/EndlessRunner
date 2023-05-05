@@ -2,7 +2,7 @@
 
 
 #include "Obstacle.h"
-
+#include "CustomGameStateBase.h"
 #include "RunnerCharacter.h"
 
 // Sets default values
@@ -44,19 +44,27 @@ void AObstacle::OnSphereOverlapBegin(UPrimitiveComponent* OverlappedComponent, A
 void AObstacle::OnSphereOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	float RandomChance = FMath::FRandRange(0.0f, 1.0f);
+	ACustomGameStateBase* CustomGameStateBase = Cast<ACustomGameStateBase>(GetWorld()->GetGameState<ACustomGameStateBase>());
 
-	if (OtherActor->IsA(ARunnerCharacter::StaticClass()) && isInvisible == true) //Makes it not invisible
+	if (CustomGameStateBase)
 	{
-		isInvisible = false;
-		SetActorHiddenInGame(isInvisible);
-	}
-	else if (OtherActor->IsA(ARunnerCharacter::StaticClass()) && isInvisible == false) //Makes it invisible
-	{
-		if (RandomChance <= 0.25f)
+		isInvisible = CustomGameStateBase->bObstacleisHidden;
+		if (OtherActor->IsA(ARunnerCharacter::StaticClass()) && isInvisible == true) //Makes it not invisible
 		{
-			isInvisible = true;
+			isInvisible = false;
+			// CustomGameStateBase->bObstacleisHidden = false;
 			SetActorHiddenInGame(isInvisible);
+		}
+		else if (OtherActor->IsA(ARunnerCharacter::StaticClass()) && isInvisible == false) //Has a chance to make it invisible
+		{
+			float RandomChance = FMath::FRandRange(0.0f, 1.0f);
+
+			if (RandomChance <= 0.25f)
+			{
+				// CustomGameStateBase->bObstacleisHidden = !CustomGameStateBase->bObstacleisHidden;
+				isInvisible = true;
+				SetActorHiddenInGame(isInvisible);
+			}
 		}
 	}
 }

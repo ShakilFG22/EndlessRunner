@@ -60,10 +60,13 @@
     <ClCompile Include="..\..\Source\EndlessRunner\CustomGameModeBase.cpp">
       <Filter>Source\EndlessRunner</Filter>
     </ClCompile>
-    <None Include="..\..\Source\EndlessRunner\CustomGameModeBase.cpp~">
-      <Filter>Source\EndlessRunner</Filter>
-    </None>
     <ClInclude Include="..\..\Source\EndlessRunner\CustomGameModeBase.h">
+      <Filter>Source\EndlessRunner</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EndlessRunner\CustomGameStateBase.cpp">
+      <Filter>Source\EndlessRunner</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EndlessRunner\CustomGameStateBase.h">
       <Filter>Source\EndlessRunner</Filter>
     </ClInclude>
     <None Include="..\..\Source\EndlessRunner\EndlessRunner.Build.cs">

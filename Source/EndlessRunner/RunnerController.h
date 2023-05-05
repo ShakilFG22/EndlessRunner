@@ -33,6 +33,10 @@ protected:
 	void PlayerAction1();
 	void PlayerAction2();
 
+	UPROPERTY()
+	UMaterialInstanceDynamic* MaterialInstance;
+
+	void SetMaterialColour(FLinearColor Colour);
 private:
 	
 	// void Jump();

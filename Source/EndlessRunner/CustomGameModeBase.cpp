@@ -3,6 +3,7 @@
 
 #include "CustomGameModeBase.h"
 
+#include "CustomGameStateBase.h"
 #include "RunnerCharacter.h"
 #include "RunnerController.h"
 #include "GameFramework/Character.h"
@@ -21,6 +22,7 @@ ACustomGameModeBase::ACustomGameModeBase()
 */
 	DefaultPawnClass = ARunnerCharacter::StaticClass();
 	PlayerControllerClass = ARunnerController::StaticClass();
+	GameStateClass = ACustomGameStateBase::StaticClass();
 	
 }
 
@@ -53,6 +55,8 @@ void ACustomGameModeBase::BeginPlay()
 	// 	});
 	// }
 }
+
+
 
 // void ACustomGameModeBase::CreatePlayers()
 // {
